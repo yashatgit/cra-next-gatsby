@@ -1,0 +1,19 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "copy:common": "cp -r ../common ./",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "baseui": "^9.54.0",
+    "next": "9.2.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "styletron-engine-atomic": "^1.4.5",
+    "styletron-react": "^5.2.7"
+  }
+}

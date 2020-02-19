@@ -1,0 +1,29 @@
+{
+  "name": "cra-next-gatsby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn workspaces run copy:common && yarn workspaces run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashatgit/cra-next-gatsby.git"
+  },
+  "keywords": [
+    "cra",
+    "next.js",
+    "gatsby"
+  ],
+  "author": "mailme@yashsoni.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashatgit/cra-next-gatsby/issues"
+  },
+  "homepage": "https://github.com/yashatgit/cra-next-gatsby#readme"
+}
