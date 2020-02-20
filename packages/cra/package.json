@@ -15,14 +15,17 @@
   },
   "scripts": {
     "copy:common": "cp -r ../common src/",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "develop": "yarn start",
+    "build:static": "yarn build",
+    "start": "yarn copy:common && react-scripts start",
+    "build": "yarn copy:common && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "yarn copy:common && react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "/cra/",
   "browserslist": {
     "production": [
       ">0.2%",

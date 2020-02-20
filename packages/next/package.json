@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "copy:common": "cp -r ../common ./",
-    "dev": "next dev",
-    "build": "next build",
+    "build:static": "yarn build && next export",
+    "develop": "yarn copy:common && next dev",
+    "build": "yarn copy:common && next build",
     "start": "next start"
   },
   "dependencies": {

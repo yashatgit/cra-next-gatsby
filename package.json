@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "yarn workspaces run copy:common && yarn workspaces run build",
+    "develop": "yarn workspaces run develop",
+    "build:static": "yarn workspaces run build:static && ./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "private": true,
